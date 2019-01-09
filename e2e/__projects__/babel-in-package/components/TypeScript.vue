@@ -7,8 +7,9 @@
 
 <script lang="ts">
 import TypeScriptChild from './TypeScriptChild.vue'
+import Vue from 'vue'
 
-export default {
+export default Vue.extend({
   computed: {
     exclamationMarks(): string {
       return 'string'
@@ -17,5 +18,5 @@ export default {
   components: {
     TypeScriptChild
   }
-}
+})
 </script>
